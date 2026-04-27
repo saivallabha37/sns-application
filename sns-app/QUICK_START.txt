@@ -1,0 +1,35 @@
+# QUICK START - 5 MINUTES TO RUNNING APP
+
+## What's Included (Already Done ✓)
+- 14 Java source files - ALL CREATED
+- Database setup SQL script - ALL CREATED
+- Configuration template - ALL CREATED
+- Compile and run scripts - ALL CREATED
+
+## What You Must Do (3 Steps)
+
+### Step 1: Download ojdbc6.jar (2 minutes)
+- Go to: https://mvnrepository.com/artifact/com.oracle/ojdbc6/11.2.0.4
+- Download the JAR file
+- Copy to: `sns-app/lib/ojdbc6.jar`
+
+### Step 2: Configure Database (1 minute)
+Edit `sns-app/db.properties`:
+```
+db.url=jdbc:oracle:thin:@localhost:1521:xe
+db.user=YOUR_ORACLE_USERNAME
+db.password=YOUR_ORACLE_PASSWORD
+```
+
+### Step 3: Run Setup & Launch (2 minutes)
+In Command Prompt, go to `sns-app/` folder:
+```
+compile.bat
+run.bat
+```
+
+Login with: testuser / password123
+
+## That's It!
+Your SNS application is now running.
+

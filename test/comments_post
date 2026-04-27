@@ -1,0 +1,4 @@
+-- Query 2: Get comments on a specific post
+SELECT C.content, U.username
+FROM COMMENTS C, USERS U
+WHERE C.user_id = U.user_id AND C.post_id = 101;
